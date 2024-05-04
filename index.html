@@ -55,7 +55,11 @@
         
         <!-- Start navigation bar -->
         
-        <?php include 'navigation.php';?>
+       	$.get("navigation.html", function(data){
+    		$("#nav").replaceWith(data);
+	});
+	      
+<!--	      <?php include 'navigation.php';?>  -->
         
         <!-- End navigation bar --> 
         
