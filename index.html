@@ -55,7 +55,18 @@
         
         <!-- Start navigation bar -->
         
-        <?php include 'navigation.html';?>
+        <!-- <?php include 'navigation.html';?>   -->
+
+	      <!--Navigation bar-->
+		<div id="nav-placeholder">
+		</div>
+
+		<script>
+		$(function(){
+		  $("#nav-placeholder").load("navigation.html");
+		});
+		</script>
+		<!--end of Navigation bar-->
         
         <!-- End navigation bar --> 
         
@@ -510,6 +521,8 @@
 <script type="text/javascript" src="js/components/parallax.min.js"></script> 
 <script type="text/javascript" src="js/components/google-map.min.js"></script> 
 <script type="text/javascript" src="js/components/wow.min.js"></script> 
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>	
 <!--========== END JAVASCRIPTS ==========-->
 
 </body>
