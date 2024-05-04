@@ -26,8 +26,6 @@
 <!-- Theme Styles -->
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	
 <!-- Favicon -->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -57,16 +55,12 @@
         
         <!-- Start navigation bar -->
         
-      	<!--Navigation bar-->
-	<div id="nav-placeholder">
-	</div>
-
-	<script>
-	$(function(){
-		$("#nav-placeholder").load("navigation.html");
-	});
-	</script>
-	<!--end of Navigation bar-->
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
         
         <!-- End navigation bar --> 
         
