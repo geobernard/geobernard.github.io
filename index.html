@@ -481,11 +481,6 @@
 <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a> 
 
 <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========--> 
-<script>
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-</script>	
 	
 <!-- Vendor --> 
 <script type="text/javascript" src="vendor/jquery.min.js"></script> 
@@ -502,6 +497,12 @@ $.get("navigation.html", function(data){
 <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script> 
 <script type="text/javascript" src="vendor/jquery.wow.min.js"></script> 
+	
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>		
 
 <!-- General Components and Settings --> 
 <script type="text/javascript" src="js/global.min.js"></script> 
