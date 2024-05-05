@@ -52,7 +52,9 @@
           <div class="s-header-v2__logo"> <a href="index.html" class="s-header-v2__logo-link"> <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="img/digtl_white.png" alt="DIGTL Logo"> <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/digtl_black.png" alt="DIGTL Logo"> </a> </div>
           <!-- End Logo --> 
         </div>
-        <?php include 'navigation.html';?>
+		<!-- Start navigation bar -->
+		<div id="nav-placeholder"></div> 
+		<!-- End navigation bar --> 
       </div>
       <!-- End Navbar Row --> 
     </div>
@@ -209,6 +211,12 @@
 <script type="text/javascript" src="js/components/parallax.min.js"></script> 
 <script type="text/javascript" src="js/components/google-map.min.js"></script> 
 <script type="text/javascript" src="js/components/wow.min.js"></script> 
+	
+<script>
+	$.get("navigation.html", function(data){
+		$("#nav-placeholder").replaceWith(data);
+	});
+</script>		
 <!--========== END JAVASCRIPTS ==========-->
 
 </body>

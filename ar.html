@@ -62,10 +62,8 @@
                         </div>
                         
 						<!-- Start navigation bar -->
-
-						<?php include 'navigation.html';?>
-
-						<!-- End navigation bar -->
+							<div id="nav-placeholder"> </div> 
+        				<!-- End navigation bar --> 	
 
                     </div>
                     <!-- End Navbar Row -->
@@ -161,6 +159,12 @@
         <script type="text/javascript" src="js/components/parallax.min.js"></script>
         <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
+		
+		<script>
+			$.get("navigation.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+			});
+		</script>	
         <!--========== END JAVASCRIPTS ==========-->
 
     </body>

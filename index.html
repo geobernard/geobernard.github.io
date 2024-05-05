@@ -51,7 +51,11 @@
 		  
         <div class="s-header-v2__navbar-col s-header-v2__navbar-col-width--180"> 
           <!-- Logo -->
-          <div class="s-header-v2__logo"> <a href="index.html" class="s-header-v2__logo-link"> <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="img/digtl_white.png" alt="DIGTL Logo"> <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/digtl_black.png" alt="DIGTL Logo"> </a> </div>
+          <div class="s-header-v2__logo"> 
+			  <a href="index.html" class="s-header-v2__logo-link"> 
+				  <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="img/digtl_white.png" alt="DIGTL Logo"> 
+				  <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/digtl_black.png" alt="DIGTL Logo"> 
+			  </a> </div>
           <!-- End Logo --> 	
         </div>
 	
@@ -500,12 +504,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script> 
 <script type="text/javascript" src="vendor/jquery.wow.min.js"></script> 
 	
-<script>
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-</script>		
-
 <!-- General Components and Settings --> 
 <script type="text/javascript" src="js/global.min.js"></script> 
 <script type="text/javascript" src="js/components/header-sticky.min.js"></script> 
@@ -518,7 +516,11 @@ $.get("navigation.html", function(data){
 <script type="text/javascript" src="js/components/google-map.min.js"></script> 
 <script type="text/javascript" src="js/components/wow.min.js"></script> 
 
-
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>	
 	
 <!--========== END JAVASCRIPTS ==========-->
 
